@@ -40,6 +40,18 @@ class CustomerForm extends Component {
                         <span>{this.state.err_salary}</span>
                     </div>
                 </form>
+
+                <div>
+                    ID is {this.state.id}
+                </div>
+
+                <div>
+                    Name is {this.state.name}
+                </div>
+
+                <div>
+                    Salary is {this.state.salary}
+                </div>
             </div>
         );
     }
