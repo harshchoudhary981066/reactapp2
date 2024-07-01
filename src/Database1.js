@@ -18,7 +18,7 @@ export default class Database1 extends Component {
     render() {
         return (
             <>
-            <h1>Person Datat</h1>
+            <h1>Person Data</h1>
             <table>
                 <tr>
                     <th>ID</th>

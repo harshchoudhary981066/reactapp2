@@ -21,22 +21,22 @@ class CustomerForm extends Component {
     render() {
         return (
             <div>
-                <form className=' border border-x-4 border-y-4 p-5 m-5 w-50% text-pretty bg-red-500'>
-                    <div>
+                <form className=' border rounded-xl border-x-4 border-y-4 border-black p-5 m-5 w-1/2 bg-blue-400 text-white font-semibold'>
+                    <div className='pt-4'>
                         <label>Enter ID</label>
-                        <input className="form-control" onChange={this.changeId}/>
+                        <input className="form-control ml-9 border-x-2 border-y-2 border-black text-black" onChange={this.changeId}/>
                         <span>{this.state.err_id}</span>
                     </div>
 
-                    <div>
+                    <div className='pt-4'>
                         <label>Enter Name</label>
-                        <input className="form-control" onChange={this.changeName}/>
+                        <input className="form-control ml-4 border-x-2 border-y-2 border-black text-black" onChange={this.changeName}/>
                         <span>{this.state.err_name}</span>
                     </div>
 
-                    <div>
+                    <div className='pt-4'>
                         <label>Enter Salary</label>
-                        <input className="form-control" onChange={this.changeSalary}/>
+                        <input className="form-control ml-4 border-x-2 border-y-2 border-black text-black" onChange={this.changeSalary}/>
                         <span>{this.state.err_salary}</span>
                     </div>
                 </form>
